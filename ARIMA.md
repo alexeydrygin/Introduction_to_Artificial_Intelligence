@@ -48,13 +48,13 @@
 
 ![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/01-2.png.webp)
 
-![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/01-2.png.webp)
+
 
 timeseries.plot()выдает нам такой график:
 
 ![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/02-2.png.webp)
 
-![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/02-2.png.webp)
+
 
 Подбор параметров регрессии
 ---------------------------
@@ -105,7 +105,6 @@ result.summary() возвращает нам такую таблицу:
 
 ![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/003-5.png.webp)
 
-![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/003-5.png.webp)
 
 Больше всего нас интересует таблица коэффициентов. Столбец coef показывает влияние каждого параметра на временной ряд, а P>|z| — значимость. Чем ближе значение P>|z| к нулю, тем выше значимость.
 
@@ -118,7 +117,7 @@ result.summary() возвращает нам такую таблицу:
 
 ![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/004-3-1024x702.png.webp)
 
-![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/004-3-1024x702.png.webp)
+
 
 По этим графикам нужно убедиться, что остатки имеют нормальное распределение и близкую к нулю автокорреляцию. В противном случае модель будет неудовлетворительной, и ее нужно будет улучшить.
 
@@ -144,7 +143,7 @@ result.summary() возвращает нам такую таблицу:
 
 ![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/005-2.png.webp)
 
-![](https://newtechaudit.ru/wp-content/webp-express/webp-images/uploads/2021/06/005-2.png.webp)
+
 
 Как мы видим, реальные значения ряда в большинстве случаев попадают в пределы доверительного интервала прогноза ARIMA. У дальнейшего прогноза точность будет уменьшаться с увеличением дальности. Согласно нашему прогнозу Канада в течение следующих двух лет продолжит наращивать экспорт нефти.
 
